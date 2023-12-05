@@ -10,7 +10,8 @@ export const NO_CACHING_DIRECTIVE = "no-store";
 /**
  * The HTTP path where the app is accessible.
  */
-export const LOCALHOST: string = "http://localhost:3000";
+export const LOCALHOST: string =
+  process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:3000";
 /**
  * AWS Region for us-east-1
  */
